@@ -5,12 +5,15 @@ import App from './App';
 import HomeApp from './home'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+// require('dotenv').config()
+const path  = process.env.REACT_APP_SECRET_KEY
+console.log(path)
 export default function MainApp() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomeApp />}></Route>
-        <Route path="angel%20jurisdiction%20water%20tissue%20hobby%20league%20quacks%20drawing%20farewell12345432109875680" element={<App />}></Route>
+        <Route path= {process.env.REACT_APP_SECRET_KEY} element={<App />}></Route>
       </Routes>
     </BrowserRouter>
   );
