@@ -4,8 +4,6 @@ import ImageGrid from './components/ImageGrid';
 import Modal from './components/Modal';
 
 function HomeApp() {
-  const path  = process.env.REACT_APP_SECRET_KEY
-console.log(path)
   const [selectedImg, setSelectedImg] = useState(null);
 
   return (

@@ -5,9 +5,7 @@ import App from './App';
 import HomeApp from './home'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// require('dotenv').config()
-const path  = process.env.REACT_APP_SECRET_KEY
-console.log(path)
+
 export default function MainApp() {
   return (
     <BrowserRouter>
