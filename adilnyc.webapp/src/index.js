@@ -11,7 +11,7 @@ export default function MainApp() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomeApp />}></Route>
-        <Route path= {process.env.REACT_APP_SECRET_KEY || REACT_APP_SECRET_KEY} element={<App />}></Route>
+        <Route path= {process.env.REACT_APP_SECRET_KEY} element={<App />}></Route>
       </Routes>
     </BrowserRouter>
   );
