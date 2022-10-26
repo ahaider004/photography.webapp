@@ -5,7 +5,7 @@ import Modal from './components/Modal';
 
 function HomeApp() {
   const [selectedImg, setSelectedImg] = useState(null);
-
+  console.log("hi")
   return (
     <div className="App">
       <Title/>
